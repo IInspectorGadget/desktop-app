@@ -1,0 +1,73 @@
+*
+    margin: 0
+    padding: 0
+body 
+    overflow: hidden
+
+.main
+    position: relative
+    background-image: url('wallpaper.jpg')
+    height: 100vh
+    background-size: cover
+    background-position: center
+    width: 100%
+
+.component
+    z-index: 10
+    height: 200px
+    width: 200px
+    position: absolute
+    background-color: red
+    cursor: pointer
+    // transform: translate(-50%, -50%)
+    transition: 50ms linear
+
+.resize
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+.resizer
+    position: absolute
+    background: brown 
+.resizer-top
+    cursor: ns-resize
+    top: 0
+    left: 0
+
+    height: 4px
+    width: 100%
+
+.resizer-bottom
+    cursor: ns-resize
+    bottom: 0
+    left: 0
+
+    height: 4px
+    width: 100%
+
+.resizer-left
+    cursor: ew-resize
+    left: 0
+    top: 0 
+
+    height: 100%
+    width: 4px
+
+.resizer-right
+    cursor: ew-resize
+    right: 0
+    top: 0 
+    height: 100%
+    width: 4px
+.move
+    position: relative
+    z-index: 2
+    width: 100%
+    height: 20px
+    background: green
+.fullscreen
+    height: 100%
+    width: 44px
+    background-color: blue
